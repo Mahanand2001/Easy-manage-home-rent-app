@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_color"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:transitionName="app_logo"
+        android:src="@drawable/logo_5"/>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bangers"
+        android:transitionName="greeting"
+        android:text="Welcome back"
+        android:textColor="#000"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter details to continue"
+        android:textSize="18dp"
+        android:transitionName="slogantext"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:id="@+id/text_view2"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="11dp"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:textColorHint="#000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="username"
+            android:id="@+id/Username1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/etPasswordLayout"
+        android:layout_marginTop="11dp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:textColorHint="#000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="password"
+            android:id="@+id/Password1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout"
+        android:transitionName="callbtn"
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="Forgot Password?"
+            android:background="@null"
+            android:id="@+id/ForgotBtn"
+            />
+
+        <Button
+            android:id="@+id/RegistrationpageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="   New User?sign up."/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Login"
+        android:transitionName="loginbtn"
+        android:textSize="18dp"
+        android:id="@+id/LoginBtn1"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
